@@ -1,0 +1,38 @@
+header {
+    align-content: center;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: #4d0671;
+    
+}
+
+.menu li {
+    display: inline;
+    background-color: #ffffff;
+    border: 0px solid;
+    border-color: white;
+    padding: 0em;
+    color: red;
+
+}
+section {
+    align-content: center;
+    margin: 0px 0px 0px 0px;
+    height: 600px;
+    background-image: url(../img/fon_home.jpg); 
+   background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: 100%;
+padding: 0;
+}
+ul {
+    text-align: center;
+}
+body {
+    margin: 0;
+}
