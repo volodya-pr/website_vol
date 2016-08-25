@@ -6,19 +6,33 @@ header {
     top: 0;
     left: 0;
     height: 70px;
-    background-color: #4d0671;
+    background-color: ;
     
 }
 
 .menu li {
     display: inline;
-    background-color: #ffffff;
+    background-color: #524644;
     border: 0px solid;
     border-color: white;
-    padding: 0em;
-    color: red;
+    padding: .5em;
+    border-radius: 2px;
+    background: linear-gradient(#524644, #786a69);
+    text-decoration-color: white;
 
 }
+.menu li:hover
+{
+    background:#786a69;
+}
+.menu li {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.menu li:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 section {
     align-content: center;
     margin: 0px 0px 0px 0px;
@@ -36,3 +50,13 @@ ul {
 body {
     margin: 0;
 }
+/*@keyframes width {
+    0%, 100% {
+        width: 350px;
+    }
+    50% {
+        width: 400px;
+    }
+}
+svg {animation: width 5s infinite;}
+svg {animation-timing-function: linear;}*/
