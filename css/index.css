@@ -1,13 +1,13 @@
 header {
+    opacity: 0,7;
     align-content: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     position: fixed;
     max-width: 1366px;
     top: 0px;
-    left: 0px;
     height: 90px;
-     background: linear-gradient(#F5A9F2, #F8E6E0);
+     background: linear-gradient(#F5A9F2,rgba(248,230,224,0.81));
      width: 100%;
      background-position: center;
      background-size: 100%;
@@ -24,13 +24,22 @@ header {
     margin-top: 7px;
     
 }
-
-.menu li {
-    margin: 9px;
-    float: left;
+li.menu:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: linear-gradient(#F8CFFF, rgba(248,230,224,0)); 
+    
+} /* при наведенні міняє колір */
+li.menu:active { 
+    background: #fff; 
+    
+} /* при натисканні */
+.menu {
+    border-radius:5px;
+    margin: 2px;
+    float: right;
     display: inline;
     border: 0px solid;
-    padding: .13em;
+    padding: 10px;
     font-family: sans-serif;
  
 
@@ -40,7 +49,7 @@ a {
 }
 
 
-section {
+#home {
     align-content: center;
     margin: 0px 0px 0px 0px;
     background-image: url(../img/homeback.jpg); 
@@ -50,11 +59,19 @@ background-attachment: fixed;
 background-size: 100%;
 padding: 0;
 }
-ul {
-    text-align: center;
+#poslugy {
+    align-content: center;
+    margin: 0px 0px 0px 0px;
+    background-image: url(../img/hsomeback.jpg); 
+   background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: 100%;
+padding: 0;
 }
+
 body {
-    margin: 0;
+    margin: 0 auto;
     max-width: 1366px;
     min-width: 800;
     align-content: center;
@@ -67,7 +84,9 @@ div h1 {
     font-variant: small-caps;
     color: #2D0063;
 }
-.texthome ul li {
+.texthome {
+    overflow-x: auto;
+    text-align: center;
     display: inline;
     font-size: 12pt;
     color: #2D0063;
@@ -79,13 +98,16 @@ div h1 {
     border-radius: 100%; 
     border: 3px solid white; 
     box-shadow: 0 0 7px #666; 
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
    }
 .form {
     background: linear-gradient(#C5CCD4, #fff);
     height: 100px;
    }
-.list ul li {
+.listposl {
+    max-width:50%;
     list-style-position: outside;
+    background-color: rgba(248,230,224,0.81);
+    
 }
