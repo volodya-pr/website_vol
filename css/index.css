@@ -5,6 +5,7 @@ header {
     padding: 0;
     position: fixed;
     max-width: 1366px;
+    min-width: 800px;
     top: 0px;
     height: 90px;
      background: linear-gradient(#F5A9F2,rgba(248,230,224,0.81));
@@ -44,6 +45,10 @@ li.menu:active {
  
 
 }
+.navmenu{
+    position: relative;
+    float: right;
+}
 a {
        text-decoration: none;
 }
@@ -62,7 +67,7 @@ padding: 0;
 #poslugy {
     align-content: center;
     margin: 0px 0px 0px 0px;
-    background-image: url(../img/hsomeback.jpg); 
+    background-image: url(../img/fon_poslugy.jpg); 
    background-repeat: no-repeat;
 background-position: center;
 background-attachment: fixed;
@@ -73,28 +78,35 @@ padding: 0;
 body {
     margin: 0 auto;
     max-width: 1366px;
-    min-width: 800;
+    min-width: 800px;
     align-content: center;
 }
-div h1 {
+#texth1 {
     text-align: center;
     padding: 100px;
-    font-size: 25pt;
+    font-size: 18px;
     font-style: normal;
     font-variant: small-caps;
     color: #2D0063;
 }
 .texthome {
+    columns: 2;
+    font-family: sans-serif;
     overflow-x: auto;
-    text-align: center;
-    display: inline;
+    text-align: justify;
+    display: inline-block;
     font-size: 12pt;
     color: #2D0063;
+}
+#bactexthome1 {
+    margin: 0 auto;
+    border-radius:10px;
+    max-width:70%;
+    background-color: rgba(248,230,224,0.81);
 }
 
 
 #imgposl {
-    
     border-radius: 100%; 
     border: 3px solid white; 
     box-shadow: 0 0 7px #666; 
@@ -106,8 +118,14 @@ div h1 {
     height: 100px;
    }
 .listposl {
-    max-width:50%;
-    list-style-position: outside;
+    margin:0 auto;
+    columns: 2;
+    color: #2D0063;
+    font-family: sans-serif;
+    font-size: large;
+    border-radius:10px;
+    max-width:90%;
+    list-style-position: inside ;
     background-color: rgba(248,230,224,0.81);
-    
+   
 }
