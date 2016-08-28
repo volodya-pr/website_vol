@@ -1,43 +1,49 @@
 header {
     align-content: center;
     margin: 0;
+    padding: 0;
     position: fixed;
-    width: 100%;
-    top: 0;
+    max-width: 1366px;
+    top: 0px;
+    left: 0px;
+    height: 90px;
+     background: linear-gradient(#F5A9F2, #F8E6E0);
+     width: 100%;
+     background-position: center;
+     background-size: 100%;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    
+    
+}
+.header {
     left: 0;
-    height: 70px;
-    background-color: ;
+    float: left;
+    margin-left: 10px;
+    margin-top: 7px;
     
 }
 
 .menu li {
+    margin: 9px;
+    float: left;
     display: inline;
-    background-color: #524644;
     border: 0px solid;
-    border-color: white;
-    padding: .5em;
-    border-radius: 2px;
-    background: linear-gradient(#524644, #786a69);
-    text-decoration-color: white;
+    padding: .13em;
+    font-family: sans-serif;
+ 
 
 }
-.menu li:hover
-{
-    background:#786a69;
-}
-.menu li {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+a {
+       text-decoration: none;
 }
 
-.menu li:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
 
 section {
     align-content: center;
     margin: 0px 0px 0px 0px;
-    height: 600px;
-    background-image: url(../img/fon_home.jpg); 
+    background-image: url(../img/homeback.jpg); 
    background-repeat: no-repeat;
 background-position: center;
 background-attachment: fixed;
@@ -49,14 +55,37 @@ ul {
 }
 body {
     margin: 0;
+    max-width: 1366px;
+    min-width: 800;
+    align-content: center;
 }
-/*@keyframes width {
-    0%, 100% {
-        width: 350px;
-    }
-    50% {
-        width: 400px;
-    }
+div h1 {
+    text-align: center;
+    padding: 100px;
+    font-size: 25pt;
+    font-style: normal;
+    font-variant: small-caps;
+    color: #2D0063;
 }
-svg {animation: width 5s infinite;}
-svg {animation-timing-function: linear;}*/
+.texthome ul li {
+    display: inline;
+    font-size: 12pt;
+    color: #2D0063;
+}
+
+
+#imgposl {
+    
+    border-radius: 100%; 
+    border: 3px solid white; 
+    box-shadow: 0 0 7px #666; 
+    width: 100px;
+    height: 100px;
+   }
+.form {
+    background: linear-gradient(#C5CCD4, #fff);
+    height: 100px;
+   }
+.list ul li {
+    list-style-position: outside;
+}
