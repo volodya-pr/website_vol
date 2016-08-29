@@ -2,13 +2,13 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>IRS</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" media="(max-width: 800px)" href="css/mindex.css" />
 </head>
 <body>
     <header>
-     <div class="header"><img src="img/logo.svg" alt="logo"></div>
+     <div class="header"><img src="img/irs_logo.svg" alt="logo"></div>
         <div class="navmenu">
         <nav>
                 <ul class="menu">
@@ -22,7 +22,7 @@
     </header>
    
     <section id="home">
-       <div id="texth1"><h1>ЦЕНТР ПРОФЕСІЙНОГО ВІДНОВЛЕННЯ ІНФОРМАЦІЇ <br>
+       <div id="texth1"><img src="img/irs_head.svg" width="30%" alt=""><br><h1><b>ЦЕНТР ПРОФЕСІЙНОГО ВІДНОВЛЕННЯ ІНФОРМАЦІЇ</b> <br>
 З ЦИФРОВИХ НОСІЇВ</h1></div>
 <div id="bactexthome1">
    <ul class="texthome">
@@ -43,14 +43,21 @@ flash-носіїв та карток пам'яті.</h2> Якщо ваша flash
 </ul>
 </div>
 <div class="form">
-    <form class="formhome">
+    <fieldset>
+        <legend>Зробити онлайн замовлення</legend>
+    <form action="https://formspree.io/prokopiv.v@gmail.com"
+      method="POST" class="formhome">
         <input type="checkbox" name="відновленян даних" value="Відновлення даних" /> <small>Відновлення даних</small><br/>
         <input type="checkbox" name="ремонт техніки" value="Ремонт техніки" /> <small>Ремонт техніки</small><br/>
-         <input type="checkbox" name="ремонт техніки" value="Ремонт техніки" /> <small>Ремонт техніки</small><br/>
-          <input type="checkbox" name="ремонт техніки" value="Ремонт техніки" /> <small>Ремонт техніки</small><br/>
+         <input type="checkbox" name="ремонт техніки" value="Ремонт техніки" /> <small>Придбати нову техніку</small>
+          <input type="checkbox" name="ремонт техніки" value="Ремонт техніки" /> <small>Послуги з обслуговування комп'ютерних мереж</small>
+          <input type="checkbox" name="ремонт техніки" value="Ремонт техніки" /> <small>Послуги з обслуговування серверного обладнання</small>
+          <input type="checkbox" name="ремонт техніки" value="Ремонт техніки" /> <small>Заправити картридж</small>
         <input type="text" name="sss"/>
         <!--<label for="1">sds</label>-->
     </form>
+    </legend>
+    </fieldset>
 </div>
     </section>
    <section id="poslugy">

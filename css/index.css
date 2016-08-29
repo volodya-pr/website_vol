@@ -8,26 +8,25 @@ header {
     min-width: 800px;
     top: 0px;
     height: 90px;
-     background: linear-gradient(#F5A9F2,rgba(248,230,224,0.81));
+    background: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.1));
      width: 100%;
      background-position: center;
      background-size: 100%;
-	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	/*-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);*/
+	/*-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);*/
+	/*box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);*/
     
     
 }
 .header {
     left: 0;
     float: left;
-    margin-left: 10px;
-    margin-top: 7px;
+    margin: 20px;
     
 }
 li.menu:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background: linear-gradient(#F8CFFF, rgba(248,230,224,0)); 
+    background: linear-gradient(rgba(0,0,92,0.5), rgba(248,230,224,0)); 
     
 } /* при наведенні міняє колір */
 li.menu:active { 
@@ -36,7 +35,7 @@ li.menu:active {
 } /* при натисканні */
 .menu {
     border-radius:5px;
-    margin: 2px;
+    margin: 6px;
     float: right;
     display: inline;
     border: 0px solid;
@@ -57,11 +56,11 @@ a {
 #home {
     align-content: center;
     margin: 0px 0px 0px 0px;
-    background-image: url(../img/homeback.jpg); 
+    background-image: url(../img/fon_home.jpg); 
    background-repeat: no-repeat;
 background-position: center;
 background-attachment: fixed;
-background-size: 100%;
+background-size: cover;
 padding: 0;
 }
 #poslugy {
@@ -71,7 +70,7 @@ padding: 0;
    background-repeat: no-repeat;
 background-position: center;
 background-attachment: fixed;
-background-size: 100%;
+background-size: cover;
 padding: 0;
 }
 
@@ -81,31 +80,45 @@ body {
     min-width: 800px;
     align-content: center;
 }
+@font-face {
+    font-family: Comfortaa-Bold;
+    src: url(../font/Comfortaa-Bold.ttf);
+}
+@font-face {
+    font-family: Comfortaa-Light;
+    src: url(../font/Comfortaa-Light.ttf);
+}
+@font-face {
+    font-family: Comfortaa-Regular;
+    src: url(../font/Comfortaa-Regular.ttf);
+}
 #texth1 {
     text-align: center;
-    padding: 100px;
+    padding-top: 100px;
     font-size: 18px;
     font-style: normal;
     font-variant: small-caps;
-    color: #2D0063;
+    font-family: Comfortaa-Bold;
+    color: #00005C;
     text-shadow: 0px 0px 9px rgba(255,255,255,0.80);
 
 
 }
 .texthome {
     columns: 2;
-    font-family: sans-serif;
-    overflow-x: auto;
-    text-align: justify;
+    font-family: Comfortaa-Regular;
+    /*overflow-x: auto;*/
+    text-align: left;
     display: inline-block;
     font-size: 12pt;
     color: #2D0063;
 }
 #bactexthome1 {
-    margin: 0 auto;
-    border-radius:10px;
+    margin: 10px auto;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
     max-width:90%;
-    background-color: rgba(248,230,224,0.81);
+    background-color: rgba(255,255,255,0.3);
 }
 
 
@@ -117,8 +130,8 @@ body {
     height: 70px;
    }
 .form {
-    background: linear-gradient(#C5CCD4, #fff);
-    height: 100px;
+    background: linear-gradient(#b9b9b9, #fff);
+    /*height: 100px;*/
    }
 .listposl {
     margin:0 auto;
