@@ -134,7 +134,7 @@ body {
     /*height: 100px;*/
    }
 .listposl {
-    margin:0 auto;
+    margin:3px auto;
     columns: 2;
     color: #2D0063;
     font-family: sans-serif;
@@ -142,16 +142,30 @@ body {
     border-radius:10px;
     max-width:90%;
     list-style-position: inside ;
-    background-color: rgba(248,230,224,0.81);
+    background-color: rgba(249, 245, 193, 0.75);
    
 }
 
 .headsection {
-    border-radius: 20px;
+    border-top-right-radius: 10px;
      color: #2D0063;
      text-align: left;
-     margin-left: 15px;
+     margin-left: 0px;
      max-width: 40%;
-     padding: 3px;
-     background: linear-gradient(#770082, rgba(248,230,224,0.5)); 
+     padding: 2px;
+     background: linear-gradient(#fff, rgba(248,230,224,0.5)); 
+}
+#pronas {
+    background-color: #dcdcdc;
+    height: 600px;
+    
+}
+.pronastext {
+    font-family: Comfortaa-Regular;
+    font-size: large;
+    color: #00005C;
+    text-align: left;
+    max-width: 85%;
+    min-width: 700px;
+    background-color: rgba(249, 245, 193, 0.75);
 }
