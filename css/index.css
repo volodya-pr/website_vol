@@ -12,10 +12,7 @@ header {
      width: 100%;
      background-position: center;
      background-size: 100%;
-	/*-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);*/
-	/*-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);*/
-	/*box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);*/
-    
+
     
 }
 .header {
@@ -170,4 +167,9 @@ body {
     max-width: 85%;
     min-width: 700px;
     background-color: rgba(249, 245, 193, 0.75);
+}
+#map {
+    width: 100%;
+    min-width: 800px;
+    height: 250px;
 }
