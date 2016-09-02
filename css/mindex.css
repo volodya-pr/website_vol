@@ -4,41 +4,173 @@ header {
     margin: 0 auto;
     padding: 0;
     position: fixed;
-    max-width: 800px;
-    min-width: 400px;
+    max-width: 799px;
+    min-width: 250px;
     top: 0px;
     height: 90px;
     background: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.1));
      width: 100%;
      background-position: center;
      background-size: 100%;
-	
+     
+
+    
 }
-.nav {
-position: relative;
-margin: 20px 0;
+#logoabr {
+    float: left;
+    size: auto;
 }
-.nav ul {
-margin: 0;
+
+
+li.menu:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: linear-gradient(rgba(0,0,92,0.5), rgba(248,230,224,0)); 
+    
+} /* при наведенні міняє колір */
+li.menu:active { 
+    background: #fff; 
+    
+} /* при натисканні */
+.menu {
+    float: none;
+    border-radius:5px;
+    margin: 6px;
+    display: inline;
+    border: 0px solid;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.navmenu{
+    position: inherit;
+    align-content: center;
+}
+a {
+       text-decoration: none;
+}
+#home {
+    align-content: center;
+    margin: 0px 0px 0px 0px;
+    background-image: url(../img/fon_home.jpg); 
+   background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
 padding: 0;
 }
-.nav li {
-margin: 0 5px 10px 0;
+#poslugy {
+    align-content: center;
+    margin: 0px 0px 0px 0px;
+    background-image: url(../img/fon_poslugy.jpg); 
+   background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
 padding: 0;
-list-style: none;
-display: inline-block;
 }
-.nav a {
-padding: 3px 12px;
-text-decoration: none;
-color: #999;
-line-height: 100%;
+
+body {
+    margin: 0 auto;
+    max-width: 799px;
+    min-width: 250px;
+    align-content: center;
 }
-.nav a:hover {
-color: #000;
+@font-face {
+    font-family: Comfortaa-Bold;
+    src: url(../font/Comfortaa-Bold.ttf);
 }
-.nav .current a {
-background: #999;
-color: #fff;
-border-radius: 5px;
+@font-face {
+    font-family: Comfortaa-Light;
+    src: url(../font/Comfortaa-Light.ttf);
+}
+@font-face {
+    font-family: Comfortaa-Regular;
+    src: url(../font/Comfortaa-Regular.ttf);
+}
+#texth1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-family: Comfortaa-Bold;
+    color: #00005C;
+    text-shadow: 0px 0px 9px rgba(255,255,255,0.80);
+
+
+}
+#logirshead {
+    visibility: hidden;
+}
+.texthome {
+    font-family: Comfortaa-Regular;
+    /*overflow-x: auto;*/
+    text-align: left;
+    display: inline-block;
+    font-size: 12pt;
+    color: #2D0063;
+}
+#bactexthome1 {
+    margin: 10px auto;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+    max-width:90%;
+    background-color: rgba(255,255,255,0.3);
+}
+
+
+.imgposl {
+    border-radius: 100%; 
+    border: 1px solid white; 
+    box-shadow: 0 0 7px #000; 
+    width: 70px;
+    height: 70px;
+    wrap-flow: clear;
+   }
+.form {
+    background: linear-gradient(#b9b9b9, #fff);
+    /*height: 100px;*/
+   }
+.listposl {
+    text-align: left;
+    margin:3px auto;
+    color: #2D0063;
+    font-family: sans-serif;
+    font-size: large;
+    border-radius:10px;
+    max-width:90%;
+    list-style-position: inside ;
+    background-color: rgba(0, 0, 0, 0.2);
+   
+}
+
+.headsection {
+    border-top-right-radius: 10px;
+     color: #2D0063;
+     text-align: left;
+     margin-left: 0px;
+     max-width: 40%;
+     padding: 2px;
+     font-family: Comfortaa-Bold;
+     background: linear-gradient(#fff, rgba(248,230,224,0.5)); 
+}
+#pronas {
+    background-color: #dcdcdc;
+    height: 600px;
+    
+}
+.pronastext {
+    font-family: Comfortaa-Regular;
+    font-size: large;
+    color: #00005C;
+    text-align: left;
+    max-width: 85%;
+    min-width: 250px;
+    background-color: rgba(249, 245, 193, 0.75);
+}
+#map {
+    width: 100%;
+    min-width: 250px;
+    height: 250px;
 }
