@@ -32,7 +32,7 @@ li.menu:active {
     
 } /* при натисканні */
 .menu {
-    float: none;
+    float: right;
     border-radius:5px;
     margin: 6px;
     display: inline;

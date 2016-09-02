@@ -176,3 +176,11 @@ body {
     min-width: 800px;
     height: 250px;
 }
+#logoabr:hover {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+#logirshead {
+    width: 30%''
+}
