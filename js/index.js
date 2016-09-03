@@ -25,7 +25,7 @@ $(function(){
  * modelne vikno
  */
 $(document).ready(function() {
-	$('a[name=modal]').click(function(e) {
+	$('a[class=button]').click(function(e) {
 		e.preventDefault();
 		var id = $(this).attr('href');
 		var maskHeight = $(document).height();
