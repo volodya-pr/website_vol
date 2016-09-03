@@ -51,6 +51,7 @@ a {
 }
 
 #home {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
     align-content: center;
     margin: 0px 0px 0px 0px;
     background-image: url(../img/fon_home.jpg);
@@ -125,6 +126,7 @@ body {
 }
 
 #bactexthome1 {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
     margin: 10px auto;
     margin-top: 80px;
     margin-bottom: 10px;
