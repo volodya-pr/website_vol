@@ -9,66 +9,67 @@ header {
     top: 0px;
     height: 90px;
     background: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.1));
-     width: 100%;
-     background-position: center;
-     background-size: 100%;
-
-    
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
 }
+
 .header {
     left: 0;
     float: left;
     margin: 20px;
-    
 }
+
 li.menu:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background: linear-gradient(rgba(0,0,92,0.5), rgba(248,230,224,0)); 
-    
-} /* при наведенні міняє колір */
-li.menu:active { 
-    background: #fff; 
-    
-} /* при натисканні */
+    background: linear-gradient(rgba(0,0,92,0.5), rgba(248,230,224,0));
+}
+
+/* Ð¿Ñ€Ð¸ Ð½Ð°Ð²ÐµÐ´ÐµÐ½Ð½Ñ– Ð¼Ñ–Ð½ÑÑ” ÐºÐ¾Ð»Ñ–Ñ€ */
+li.menu:active {
+    background: #fff;
+}
+
+/* Ð¿Ñ€Ð¸ Ð½Ð°Ñ‚Ð¸ÑÐºÐ°Ð½Ð½Ñ– */
 .menu {
-    border-radius:5px;
+    border-radius: 5px;
     margin: 6px;
     float: right;
     display: inline;
     border: 0px solid;
     padding: 10px;
     font-family: sans-serif;
- 
-
 }
-.navmenu{
+
+.navmenu {
     position: relative;
     float: right;
 }
-a {
-       text-decoration: none;
-}
 
+a {
+    text-decoration: none;
+}
 
 #home {
     align-content: center;
     margin: 0px 0px 0px 0px;
-    background-image: url(../img/fon_home.jpg); 
-   background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
-background-size: cover;
-padding: 0;
+    background-image: url(../img/fon_home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0;
 }
+
 #poslugy {
     align-content: center;
     margin: 0px 0px 0px 0px;
-    background-image: url(../img/fon_poslugy.jpg); 
-   background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
-background-size: cover;
-padding: 0;
+    background-image: url(../img/fon_poslugy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0;
 }
 
 body {
@@ -77,18 +78,22 @@ body {
     min-width: 800px;
     align-content: center;
 }
+
 @font-face {
     font-family: Comfortaa-Bold;
     src: url(../font/Comfortaa-Bold.ttf);
 }
+
 @font-face {
     font-family: Comfortaa-Light;
     src: url(../font/Comfortaa-Light.ttf);
 }
+
 @font-face {
     font-family: Comfortaa-Regular;
     src: url(../font/Comfortaa-Regular.ttf);
 }
+
 #texth1 {
     text-align: center;
     padding-top: 100px;
@@ -98,9 +103,8 @@ body {
     font-family: Comfortaa-Bold;
     color: #00005C;
     text-shadow: 0px 0px 9px rgba(255,255,255,0.80);
-
-
 }
+
 .texthome {
     columns: 2;
     font-family: Comfortaa-Regular;
@@ -110,58 +114,60 @@ body {
     font-size: 12pt;
     color: #2D0063;
 }
+
 #bactexthome1 {
     margin: 10px auto;
     margin-top: 80px;
     margin-bottom: 60px;
-    border-top-left-radius:10px;
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    max-width:90%;
+    max-width: 90%;
     background-color: rgba(255,255,255,0.3);
 }
 
-
 .imgposl {
-    border-radius: 100%; 
-    border: 1px solid white; 
-    box-shadow: 0 0 7px #000; 
+    border-radius: 100%;
+    border: 1px solid white;
+    box-shadow: 0 0 7px #000;
     width: 70px;
     height: 70px;
     wrap-flow: clear;
-   }
+}
+
 .form {
     background: linear-gradient(#b9b9b9, #fff);
     /*height: 100px;*/
-   }
+}
+
 .listposl {
     text-align: left;
-    margin:3px auto;
+    margin: 3px auto;
     columns: 2;
     color: #2D0063;
     font-family: sans-serif;
     font-size: large;
-    border-radius:10px;
-    max-width:90%;
+    border-radius: 10px;
+    max-width: 90%;
     list-style-position: inside ;
     background-color: rgba(0, 0, 0, 0.2);
-   
 }
 
 .headsection {
     border-top-right-radius: 10px;
-     color: #2D0063;
-     text-align: left;
-     margin-left: 0px;
-     max-width: 40%;
-     padding: 2px;
-     font-family: Comfortaa-Bold;
-     background: linear-gradient(#fff, rgba(248,230,224,0.5)); 
+    color: #2D0063;
+    text-align: left;
+    margin-left: 0px;
+    max-width: 40%;
+    padding: 2px;
+    font-family: Comfortaa-Bold;
+    background: linear-gradient(#fff, rgba(248,230,224,0.5));
 }
+
 #pronas {
     background-color: #dcdcdc;
     height: 600px;
-    
 }
+
 .pronastext {
     font-family: Comfortaa-Regular;
     font-size: large;
@@ -171,16 +177,19 @@ body {
     min-width: 700px;
     background-color: rgba(249, 245, 193, 0.75);
 }
+
 #map {
     width: 100%;
     min-width: 800px;
     height: 250px;
 }
+
 #logoabr:hover {
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
 }
+
 #logirshead {
     width: 30%''
 }
