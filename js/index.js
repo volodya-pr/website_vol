@@ -6,6 +6,7 @@ $(function(){
 			top = $(id).offset().top;
 		$('body,html').animate({scrollTop: top}, 800);
 	});
+});
 
 $("#texth1").fadeIn(1000);
 
