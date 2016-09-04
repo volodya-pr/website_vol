@@ -16,6 +16,81 @@ header {
 
     
 }
+/* start menu*/
+a, a:visited {
+	color: #464530;
+	text-decoration: none;
+}
+.drop-menu {
+	display: block;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-right: 10px;
+	text-align: left;
+	padding: 10px 10px;
+	font-size: 22px;
+	height: 25px;
+	max-height: 25px;
+	width: 100px;
+	background: #fff;
+	cursor: pointer;
+	font-family: Comfortaa-Bold;
+	border: 1px solid #f6f0e4;
+	-webkit-box-shadow: 0px 13px 25px rgba(0,0,0, 0.2);
+	-moz-box-shadow: 0px 13px 25px rgba(0,0,0, 0.2);
+	box-shadow: 0px 13px 25px rgba(0,0,0, 0.2);
+}
+.plus2 {
+	display: inline-block;
+	padding-right: 10px;
+	font-weight: bold;
+	font-size: 12px;
+	}
+.plus {
+    font-family: Comfortaa-Bold;
+	display: inline-block;
+	-webkit-transition: .3s ease-in-out;
+  	-moz-transition: .3s ease-in-out;
+  	-o-transition: .3s ease-in-out;
+	}
+.drop-menu:hover {
+	border: 1px solid #fff;
+	}
+.drop-menu:hover .sub-menu {
+	display: inline-block;
+	}
+.drop-menu:hover .plus {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	}
+.sub-menu {
+	display: none;
+	width: 200px;
+	background: #fff;
+	padding: 10px 10px;
+	margin-left: -111px;
+	margin-top: 10px;
+	border: 1px solid #fff;
+	-webkit-box-shadow: 0px 13px 25px rgba(0,0,0, 0.2);
+	-moz-box-shadow: 0px 13px 25px rgba(0,0,0, 0.2);
+	box-shadow: 0px 13px 25px rgba(0,0,0, 0.2);
+	}
+.sub-menu li {
+	list-style-type: none;
+	display: block;
+	border-bottom: 1px dotted #eaeaea;
+	font-size: 19px;
+	height: 22px;
+	padding: 8px 0;
+	}
+.sub-menu li img {
+	margin-right: .5em;
+	}
+.sub-menu li:hover {
+	border-bottom: 1px dotted #bababa;
+	}
+	/*finish menu vypad*/
 #logoabr {
     float: left;
     size: auto;
@@ -32,13 +107,21 @@ li.menu:active {
     
 } /* при натисканні */
 .menu {
+    font-family: Comfortaa-Bold;
+    display: none;
+}
+#navbar {
+    
+    position: relative;
     float: right;
-    border-radius:5px;
-    margin: 6px;
-    display: inline;
-    border: 0px solid;
-    padding: 10px;
-    font-family: sans-serif;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 .navmenu{
     position: inherit;
@@ -99,7 +182,7 @@ body {
 
 }
 #logirshead {
-    visibility: hidden;
+    display: none;
 }
 .texthome {
     font-family: Comfortaa-Regular;
@@ -116,7 +199,7 @@ body {
     border-top-left-radius:10px;
     border-top-right-radius: 10px;
     max-width:90%;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.6);
 }
 
 
@@ -132,25 +215,34 @@ body {
     background: linear-gradient(#b9b9b9, #fff);
     /*height: 100px;*/
    }
+#listposldiv {
+    text-align: center;
+}
 .listposl {
+    font: 19px/1.5 Arial, sans-serif;
+    font-family: Comfortaa-Regular;
     text-align: left;
-    margin:3px auto;
-    color: #2D0063;
-    font-family: sans-serif;
-    font-size: large;
-    border-radius:10px;
-    max-width:90%;
-    list-style-position: inside ;
-    background-color: rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
+    color: #333;
+    padding: 5px;
+    margin: 2px 10px 4px;
+    width: 90%;
    
+    background:#fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  border: 3px solid #efefef;
+    -moz-border-radius: 0 0 120px 120px / 0 0 6px 6px;
+    border-radius: 9px 9px 9px 12px;
 }
 
 .headsection {
     border-top-right-radius: 10px;
      color: #2D0063;
-     text-align: left;
-     margin-left: 0px;
-     max-width: 40%;
+     text-align: center;
+     margin: 10px 15px 10px;
+     max-width: 90%;
      padding: 2px;
      font-family: Comfortaa-Bold;
      background: linear-gradient(#fff, rgba(248,230,224,0.5)); 
@@ -174,3 +266,175 @@ body {
     min-width: 250px;
     height: 250px;
 }
+/*knopka start*/
+#knopkazam {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.button {
+    left: 40px;
+    display: inline-block;
+    margin: 0 auto;
+    
+    -webkit-border-radius: 10px;
+    
+    -webkit-box-shadow: 
+        0px 3px rgba(128,128,128,1), 
+        0px 4px rgba(118,118,118,1),
+        0px 5px rgba(108,108,108,1),
+        0px 6px rgba(98,98,98,1),
+        0px 7px rgba(88,88,88,1),
+        0px 8px rgba(78,78,78,1),
+        0px 14px 6px -1px rgba(128,128,128,1); 
+    
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+} 
+
+.button span {
+    background-color: #E8E8E8;
+    
+    background-image: 
+        
+        -webkit-gradient(
+            linear, 
+            left bottom, 
+            left top, 
+            color-stop(50%,rgba(255,255,255,0)), 
+            color-stop(50%,rgba(255,255,255,0.3)), 
+            color-stop(100%,rgba(255,255,255,0.2))),
+        
+        -webkit-gradient(
+            linear, 
+            left top, 
+            right top, 
+            color-stop(0%,rgba(210,210,210,0.3)), 
+            color-stop(20%,rgba(210,210,210,0)), 
+            color-stop(80%,rgba(210,210,210,0)), 
+            color-stop(100%,rgba(210,210,210,0.3))),
+        
+        -webkit-gradient(
+            linear, 
+            left top, 
+            right top, 
+            color-stop(0%,rgba(255,255,255,0)), 
+            color-stop(20%,rgba(255,255,255,0.5)), 
+            color-stop(80%,rgba(255,255,255,0.5)), 
+            color-stop(100%,rgba(255,255,255,0))),        
+        
+        -webkit-gradient(
+            linear, 
+            0% 100%, 
+            100% 0%, 
+            color-stop(0%,rgba(255,255,255,0)), 
+            color-stop(40%,rgba(255,255,255,0)), 
+            color-stop(40%,#D2D2D1), 
+            color-stop(60%,#D2D2D1), 
+            color-stop(60%,rgba(255,255,255,0)), 
+            color-stop(100%,rgba(255,255,255,0)));
+    
+        -webkit-box-shadow:
+            0px -1px #fff, /* top highlight */
+            0px 1px 1px #FFFFFF; /* bottom edge */
+    
+    -webkit-background-size: 100%, 100%, 100%, 4px 4px;
+    
+    -webkit-border-radius: 10px;
+    -webkit-transition: -webkit-transform .1s ease-in-out;
+    
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    
+    color: #3A474D;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 32px;
+    
+    text-shadow: 0px 1px #fff, 0px -1px #262F33;
+}
+
+        .button span:hover {
+            color: #AEBF3B;
+            text-shadow: 0px -1px #97A63A;
+            cursor: pointer;
+        }
+
+        .button:active {
+            -webkit-box-shadow: 
+                0px 3px rgba(128,128,128,1),
+                0px 4px rgba(118,118,118,1),
+                0px 5px rgba(108,108,108,1),
+                0px 6px rgba(98,98,98,1),
+                0px 7px rgba(88,88,88,1),
+                0px 8px rgba(78,78,78,1),
+                0px 10px 2px 0px rgba(128,128,128,.6); /* shadow */
+        }
+
+        .button:active span{
+            -webkit-transform: translate(0, 5px); /* depth of button press */
+        }
+
+    .button span:after {
+        display: block;
+        width: 10px;
+        height: 10px;
+    
+        position: absolute;
+        right: 14px;
+        top: 12px;    
+        
+        font-family: 'monospace';
+        font-weight: 700;
+        color: #AEBF3B;
+        text-shadow: 0px 1px #fff, 0px -1px #97A63A;
+        font-size: 26px;
+    }
+    #knopkazam {
+  background-image:
+        -webkit-gradient(
+            radial, 
+            50% -50, 
+            300, 
+            50% 0, 
+            0, 
+            from(rgba(230, 237, 241, 0)), 
+            to(rgba(230, 237, 241, 0.8)));
+    
+ 
+}
+
+/*knopka end*/
+/*modelne vikno start style*/
+#mask {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9000;
+	background-color:#000;
+	display:none;
+	font-family: Georgia;
+	}
+#boxes .window {
+	position:absolute;
+	left:0;
+	top:0;
+	width:90%;
+	height:500px;
+	display:none;
+	z-index:9999;
+	padding:20px;
+	text-align: center;
+	font-size: 25px;
+	}
+#boxes #dialog {
+    margin: 10px 10px 10px;
+	width: 90%;
+	height:70%;
+	padding:10px;
+	background-color:#ffffff;
+	}
+.close {
+	float: right;
+	margin-top: 148px;
+	}
+/*modelne vikno end style*/

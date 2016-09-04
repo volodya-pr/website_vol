@@ -13,7 +13,9 @@ header {
     background-position: center;
     background-size: 100%;
 }
-
+#navbar {
+    display: none;
+}
 .header {
     left: 0;
     float: left;
@@ -143,6 +145,8 @@ body {
     width: 70px;
     height: 70px;
     wrap-flow: clear;
+    float: left;
+    margin: 3px;
 }
 /*modelne vikno start style*/
 #mask {
@@ -177,33 +181,49 @@ body {
 	margin-top: 148px;
 	}
 /*modelne vikno end style*/
+#listposldiv {
+    text-align: center;
+}
 .listposl {
-    text-align: left;
-    margin: 3px auto;
-    columns: 2;
-    color: #2D0063;
-    font-family: sans-serif;
-    font-size: large;
-    border-radius: 10px;
-    max-width: 90%;
-    list-style-position: inside ;
-    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    vertical-align: middle;
+    color: #333;
+    padding: 1px;
+    margin: 2px 10px 4px;
+    width: 40%;
+    height: 100px;
+    display: inline-flex;
+    background:#fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  border: 3px solid #efefef;
+    -moz-border-radius: 0 0 120px 120px / 0 0 6px 6px;
+    border-radius: 150px 7px 7px 12px;
 }
 
 .headsection {
     border-top-right-radius: 10px;
     color: #2D0063;
-    text-align: left;
+    text-align: center;
     margin-left: 0px;
     max-width: 40%;
     padding: 2px;
     font-family: Comfortaa-Bold;
-    background: linear-gradient(#fff, rgba(248,230,224,0.5));
-}
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 50px rgba(0, 0, 0, 0.5) inset;}
 
 #pronas {
-    /*background-color: #dcdcdc;*/
-    height: 600px;
+   align-content: center;
+    margin: 0px 0px 0px 0px;
+    /*background-image: url(../img/fon_poslugy.jpg);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0;
 }
 
 .pronastext {
@@ -319,8 +339,8 @@ body {
 }
 
         .button span:hover {
-            color: #AEBF3B;
-            text-shadow: 0px -1px #97A63A;
+            color: #3a87a6;
+            text-shadow: 0px -1px #3a87a6;
             cursor: pointer;
         }
 
@@ -350,8 +370,8 @@ body {
         
         font-family: 'monospace';
         font-weight: 700;
-        color: #AEBF3B;
-        text-shadow: 0px 1px #fff, 0px -1px #97A63A;
+        color:  #3a7ca6;
+        text-shadow: 0px 1px #fff, 0px -1px  #3a7ca6;
         font-size: 26px;
     }
     #knopkazam {
