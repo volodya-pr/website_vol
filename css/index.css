@@ -184,6 +184,9 @@ body {
 #listposldiv {
     text-align: center;
 }
+.drop-menu {
+    display: none;
+}
 .listposl {
     text-align: center;
     vertical-align: middle;
