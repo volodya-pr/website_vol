@@ -187,10 +187,10 @@ body {
 .texthome {
     font-family: Comfortaa-Regular;
     /*overflow-x: auto;*/
-    text-align: left;
-    display: inline-block;
+    text-align: center;
+    display: inline;
     font-size: 12pt;
-    color: #2D0063;
+    color: #fff;
 }
 #bactexthome1 {
     margin: 10px auto;
@@ -199,12 +199,12 @@ body {
     border-top-left-radius:10px;
     border-top-right-radius: 10px;
     max-width:90%;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(0, 46, 84, 0.66);
 }
 
 
 .imgposl {
-    border-radius: 100%; 
+    border-radius: 5% 5% 70%; 
     border: 1px solid white; 
     box-shadow: 0 0 7px #000; 
     width: 70px;
@@ -223,12 +223,12 @@ body {
     font-family: Comfortaa-Regular;
     text-align: left;
     vertical-align: middle;
-    color: #333;
+    color: #fff;
     padding: 5px;
     margin: 2px 10px 4px;
     width: 90%;
    
-    background:#fff;
+    background: rgba(7, 34, 58, 0.5);
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -238,14 +238,15 @@ body {
 }
 
 .headsection {
-    border-top-right-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    border-radius: 5px;
      color: #2D0063;
      text-align: center;
      margin: 10px 15px 10px;
      max-width: 90%;
      padding: 2px;
      font-family: Comfortaa-Bold;
-     background: linear-gradient(#fff, rgba(248,230,224,0.5)); 
+     background: linear-gradient(#fff, rgba(109, 109, 109, 0.34)); 
 }
 #pronas {
     background-color: #dcdcdc;
