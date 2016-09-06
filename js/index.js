@@ -1,26 +1,20 @@
  
-$(function(){
-	$(".menu").on("click","a", function (event) {
-		event.preventDefault();
-		var id  = $(this).attr('href'),
-			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 800);
-	});
+$(function() {
+    
+    $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+    
 });
 
-$("#texth1").fadeIn(1000);
 
-$(function(){
 
-        $(window).scroll(function(){
-
-            var bo = $("#texth1").scrollTop();
-
-        if ( bo > 200 ) $("#home").animate({'opacity':'1'},2);
-
-        })
-
-    })
 /**
  * modelne vikno
  */
@@ -64,7 +58,8 @@ function sendForm(e) {
             email: $('#email').val(),
             message: $('#msg').val(),
             rem: $('#rem').val(),
-            vid: $('#vid').val()
+            vid: $('#vid').val(),
+            phone: $('phone'). val()
         },
         dataType: "json",
         success: function() {
@@ -73,3 +68,9 @@ function sendForm(e) {
     });
 
 }
+
+$(function(){
+	$('.overlay').click(function() {
+		$(this).remove();
+	});
+});

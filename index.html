@@ -5,46 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <title>IRS</title>
-        <link rel="stylesheet" media="(min-width: 800px)" href="css/index.css">
-        <link rel="stylesheet" media="(max-width: 799px)" href="css/mindex.css"/>
+        <link rel="stylesheet" href="css/animate.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" media="(min-width: 766px)" href="css/index.css">
+        <link rel="stylesheet" media="(max-width: 765px)" href="css/mindex.css"/>
     </head>
     <body>
         <header>
-            <div class="header">
-                <img id="logoabr" src="img/irs_logo.svg" alt="logo">
-            </div>
-            <div class="navmen">
-<div class="drop-menu">
-	<span class="plus"></span>   МЕНЮ
-	<ul class="sub-menu">
-		<li class="menu"><a href="#home"><span class="plus2"></span>ГОЛОВНА</a></li>
-		<li class="menu"><a href="#poslugy"><span class="plus2"></span>ПОСЛУГИ</a></li>
-		<li class="menu"><a href="#pronas"><span class="plus2"></span>ПРО НАС</a></li>
-		<li class="menu"><a href="#kontakt"><span class="plus2"></span>КОНТАКТИ</a></li>
-	</ul>
-</div>
-
-                <nav>
-                    <ul class="menu">
-                        <li class="menu">
-                            <a href="#kontakt">КОНТАКТИ</a>
-                        </li>
-                        <li class="menu">
-                            <a href="#pronas">ПРО НАС</a>
-                        </li>
-                        <li class="menu">
-                            <a href="#poslugy">ПОСЛУГИ</a>
-                        </li>
-                        <li class="menu">
-                            <a href="#home">ГОЛОВНА</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+             <nav class="navbar navbar-default navbar-fixed-top" id="head1">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home"><img width="40%" src="img/irs_logo.svg" alt="logo"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Головна</a></li>
+            <li><a href="#poslugy">Послуги</a></li>
+            <li><a href="#pronas">Про нас</a></li>
+            <li><a href="#kontakt">Контакти</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
         </header>
         <section id="home">
             <div id="texth1">
-                <img id="logirshead" src="img/irs_head.svg" alt="">
+                <img class="animated flip" id="logirshead" src="img/irs_head.svg" alt="">
                 <br>
                 <h1>
                     <b>ЦЕНТР ПРОФЕСІЙНОГО ВІДНОВЛЕННЯ ІНФОРМАЦІЇ</b>
@@ -77,27 +72,30 @@ flash-носіїв та карток пам'яті.</h2>
         <div id="knopkazam"> <a href="#dialog" class="button"><span>Зробити замовлення</span></a></div>
 <div id="boxes">
 	<div id="dialog" class="window">
-	 <h1>Contact</h1>
+	 <h1>Вкажіть ваші контактні дані та вид послуги.</h1>
     <p id="thanks"></p>
     <form>
         <input type="checkbox" id="vid" value="Відновлення даних"/>
-        <small>Відновлення даних</small>
+        <label for="vid">Відновлення даних</label>
         <br/>
-        <input type="checkbox" id="rem" value="Ремонт техніки"/>
-        <small>Ремонт техніки</small>
+        <input  type="checkbox" id="rem" value="Ремонт техніки"/>
+        <label for="rem">Ремонт техніки</label>
         <br/>
-        <label for="name">Your name</label>
-        <input type="text" id="name">
+        <label placeholder="Ім'я" for="name">Ваше ім'я</label>
+        <input  class="form-control" type="text" id="name" placeholder="Ваше ім'я">
        <br>
-       <label for="email">Your email</label>
-       <input type="email" id="email">
+       <label placeholder="Ім'я" for="phone">Ваш номер телефону</label>
+        <input  class="form-control" type="text" id="phone" placeholder="Ваш номер телефону">
        <br>
-       <label for="msg">Your Message</label>
-       <input type="text" id="msg">
+       <label for="email">Ваш електронна поштова адреса</label>
+       <input class="form-control" type="email" id="email" placeholder="Ваша електронна поштова скринька">
        <br>
-       <button id="btn-send">send</button>
+       <label for="msg">Повідомлення</label>
+       <textarea type="text" id="msg" rows="3" placeholder="Ваші додаткові побажання"></textarea>
+       <br>
+       <button id="btn-send">ВІДПРАВИТИ</button>
     </form>
-	<span><a href="#" class="close">Закрити</a></span>
+	<span><a href="#home" class="close">Закрити</a></span>
 	</div>
 	<div id="mask"></div>
 </div>
@@ -113,10 +111,10 @@ flash-носіїв та карток пам'яті.</h2>
                 <br>
                 <div id="listposldiv">
                     <div class="listposl">
-                        <img src="img/imgli-1.jpg" alt="" class="imgposl">Ми з легкістю відремонтуємо Ваш комп’ютер, ноутбук чи планшет. 
+                        <img src="img/imgli-1.jpg" alt="" class="imgposl"> <br> Ми з легкістю відремонтуємо Ваш комп’ютер, ноутбук чи планшет. 
                     </div>
-                    <div class="listposl">
-                        <img src="img/imgli-2.jpg" alt="" class="imgposl">Сталась неприємність і Ви втратили всю важливу інформацію з комп’ютера чи з'ємного носія? Ми без проблем зможемо її відновити 
+                    <div  class="listposl">
+                       <img src="img/imgli-2.jpg" alt="" class="imgposl">Сталась неприємність і Ви втратили всю важливу інформацію з комп’ютера чи з'ємного носія? Ми без проблем зможемо її відновити 
 за допомогою професійного обладнання, якому немає аналогів у світі. 
                     </div>
                     <div class="listposl">
@@ -168,9 +166,11 @@ flash-носіїв та карток пам'яті.</h2>
                     <li>м. Львів, вул. Дудаєва,15 (кімн. 51)</li>
                 </ul>
             </div>
+            <div class="overlay" onClick="style.pointerEvents='none'">Розблокувати карту!</div>
             <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.341744214551!2d24.027107815569124!3d49.836035939325434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6f3ffffa53%3A0x97a6400db78706ec!2z0LLRg9C70LjRhtGPINCU0LbQvtGF0LDRgNCwINCU0YPQtNCw0ZTQstCwLCAxNSwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1suk!2sua!4v1472713777955" style="border:0" allowfullscreen></iframe>
         </section>
         <script src="//code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
