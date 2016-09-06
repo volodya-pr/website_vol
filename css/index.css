@@ -123,11 +123,11 @@ body {
 	left:0;
 	top:0;
 	width:540px;
-	height:500px;
+	height:auto;
 	display:none;
 	z-index:9999;
 	padding:20px;
-	text-align: center;
+	text-align: justify;
 	font-size: 25px;
 	}
 #boxes #dialog {
