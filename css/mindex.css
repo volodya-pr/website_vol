@@ -419,20 +419,22 @@ body {
 	position:absolute;
 	left:0;
 	top:0;
-	width:90%;
 	height:500px;
 	display:none;
 	z-index:9999;
 	padding:20px;
-	text-align: center;
-	font-size: 25px;
+	text-align: left;
+	font-size: 17px;
 	}
 #boxes #dialog {
-    margin: 10px 10px 10px;
-	width: 90%;
+    margin: 10px 10px 10px 10px;
 	height:70%;
 	padding:10px;
 	background-color:#ffffff;
+		-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.81), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.50) inset;
+    border-radius: 20px 20px 20px 20px;
 	}
 .close {
 	float: right;
