@@ -69,8 +69,3 @@ function sendForm(e) {
 
 }
 
-$(function(){
-	$('.overlay').click(function() {
-		$(this).remove();
-	});
-});

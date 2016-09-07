@@ -353,11 +353,3 @@ body {
 }
 
 /*knopka end*/
-.overlay {
-	background:transparent; 
-	position:relative; 
-	width: 100%;
-    min-width: 800px;
-    height: 250px;
-	margin-top:-5px;
-}
