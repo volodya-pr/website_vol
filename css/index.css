@@ -128,10 +128,10 @@ body {
 	z-index:9999;
 	padding:20px;
 	text-align: justify;
-	font-size: 25px;
+	font-size: 18px;
 	}
 #boxes #dialog {
-	width:575px;
+    margin-top: 140px;
 	height: auto;
 	padding:10px;
 	background-color:#ffffff;
