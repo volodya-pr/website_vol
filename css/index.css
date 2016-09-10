@@ -1,6 +1,9 @@
 .navbar-default {
-        background-image: linear-gradient(to bottom,#c7c7c7 0,#efefef 100%);
+        background-image: linear-gradient(to bottom,rgb(255, 255, 255) 0,#ccc 100%);
     
+}
+.navbar-nav {
+    float: right;
 }
 
 .header {
@@ -16,6 +19,7 @@ a {
 #home {
     box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
     align-content: center;
+    height: 800px;
     margin: 0px 0px 0px 0px;
     background-image: url(../img/fon_home.jpg);
     background-repeat: no-repeat;
@@ -41,15 +45,8 @@ body {
     max-width: 1600px;
     min-width: 800px;
     align-content: center;
-    
-     background: #A7A9AC;
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        right top,
-        color-stop(.34, rgba(230,237,241,.05)),
-        color-stop(.67, rgba(230,237,241,0)));
-    -webkit-background-size: 5px 5px;
+     background: #16335f;
+    background-image:  -webkit-gradient( linear, left bottom, left top, color-stop(50%,rgba(255, 255, 255, 0.28)), color-stop(50%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0.2))), -webkit-gradient( linear, left top, right top, color-stop(0%,rgba(210,210,210,0.3)), color-stop(20%,rgba(210,210,210,0)), color-stop(80%,rgba(210,210,210,0)), color-stop(100%,rgba(210,210,210,0.3))), -webkit-gradient( linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(20%,rgba(255, 255, 255, 0.35)), color-stop(80%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0))), -webkit-gradient( linear, 0% 100%, 100% 0%, color-stop(0%,rgba(255,255,255,0)), color-stop(40%,rgba(255,255,255,0)), color-stop(40%,#021f38), color-stop(60%,rgb(255, 255, 255)), color-stop(60%,rgba(0, 0, 0, 0)), color-stop(100%,rgba(6, 6, 6, 0)));
 }
 
 @font-face {
@@ -67,36 +64,65 @@ body {
     src: url(../font/Comfortaa-Regular.ttf);
 }
 
-#texth1 {
-    text-align: center;
-    padding-top: 100px;
-    font-size: 18px;
+#texth1 h1 {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 35px;
     font-style: normal;
     font-variant: small-caps;
     font-family: Comfortaa-Bold;
-    color: #00005C;
+    color: #fff;
     text-shadow: 0px 0px 9px rgba(255,255,255,0.80);
+}
+#texth1 .animated  {
+    -webkit-animation-duration: 1s;
+    background-color: rgba(247, 247, 247, 0.28);
+    animation-duration: 5s;
+}
+#texth1 {
+    
+    padding-top: 100px;
+    max-width: 50%;
+    margin-left: 30px;
+    float: left;
+    
 }
 
 .texthome {
-    columns: 2;
+    padding: 20px;
     font-family: Comfortaa-Regular;
-    /*overflow-x: auto;*/
+    text-align: justify;
+    display: inline-block;
+    font-size: 13pt;
+    color: rgb(14, 14, 14);
+}
+.animated:hover {
+    background-color: #202b3a;
+    box-shadow: 5px 5px 20px rgba(0,0,0,5);
+    box-shadow: inset 0 0 0 5px #afafaf;
+}
+.animated {
+
+    padding: 10px;
+    font-family: Comfortaa-Regular;
     text-align: left;
     display: inline-block;
     font-size: 12pt;
-    color: #2D0063;
+    background-color: rgb(62, 62, 62);
+    color: #e0e0e0;
 }
 
 #bactexthome1 {
+    
+    float: right;
     box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
     margin: 10px auto;
     margin-top: 80px;
     margin-bottom: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    max-width: 90%;
-    background-color: rgba(255,255,255,0.3);
+    max-width: 40%;
+    background-color: rgba(255,255,255,0.6);
 }
 
 .imgposl {
@@ -147,15 +173,25 @@ body {
 /*modelne vikno end style*/
 #listposldiv {
     text-align: center;
+    width: 100%;
+}
+.listposl:hover {
+    background: #f5f5f5;
+    border: 3px solid #f5f5f5;
+    border-radius: 5px;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 }
 .listposl {
     text-align: justify;
     vertical-align: middle;
     color: #333;
+    width: 400px;
     padding: 1px;
     margin: 2px 10px 4px;
-    width: 100%;
-    height: 100px;
+    height: 130px;
     display: inline-flex;
     background:#fff;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -163,7 +199,7 @@ body {
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   border: 3px solid #efefef;
     -moz-border-radius: 0 0 120px 120px / 0 0 6px 6px;
-    border-radius: 12px;
+    border-radius: 0px;
 }
 
 .headsection {
@@ -213,11 +249,16 @@ body {
 }
 
 #logirshead {
-    width: 30%''
+    border-radius: 9px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
 }
 /*knopka start*/
 #knopkazam {
+    float: left;
+    margin-left: 40px;
     text-align: center;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 .button {
@@ -353,3 +394,4 @@ body {
 }
 
 /*knopka end*/
+

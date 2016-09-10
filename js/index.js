@@ -1,7 +1,7 @@
  
 $(function() {
     
-    $('a[href^="#"]').on('click', function(event) {
+    $('a.navmenu').on('click', function(event) {
         var target = $(this.getAttribute('href'));
         if( target.length ) {
             event.preventDefault();
@@ -64,8 +64,11 @@ function sendForm(e) {
         dataType: "json",
         success: function() {
             $('#thanks').html('thanks');
+            $('#formzam')[0].reset();
         }
     });
 
 }
-
+$('.carousel').carousel({
+  interval: 2000
+})

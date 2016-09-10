@@ -22,60 +22,63 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#home"><img width="40%" src="img/irs_logo.svg" alt="logo"></a>
+          <a class="navbar-brand" href="#home"><img width="60" src="img/irs_logo.svg" alt="logo"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#home">Головна</a></li>
-            <li><a href="#poslugy">Послуги</a></li>
-            <li><a href="#pronas">Про нас</a></li>
-            <li><a href="#kontakt">Контакти</a></li>
+            <li class="active"><a href="#home" class="navmenu">Головна</a></li>
+            <li><a href="#poslugy" class="navmenu">Послуги</a></li>
+            <li><a href="#pronas" class="navmenu">Про нас</a></li>
+            <li><a href="#kontakt" class="navmenu">Контакти</a></li>
               </ul>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>
         </header>
-        <section id="home">
-            <div id="texth1">
-                <img class="animated flip" id="logirshead" src="img/irs_head.svg" alt="">
-                <br>
+        <section class="row" id="home">
+  
+          <div> <div id="texth1">
+                <img class="animated flip" id="logirshead" src="img/irs_logo.svg" alt="">
+            
                 <h1>
-                    <b>ЦЕНТР ПРОФЕСІЙНОГО ВІДНОВЛЕННЯ ІНФОРМАЦІЇ</b>
-                    <br>З ЦИФРОВИХ НОСІЇВ
+                    <b>ЦЕНТР ПРОФЕСІЙНОГО ВІДНОВЛЕННЯ ІНФОРМАЦІЇ
+                    <br>З ЦИФРОВИХ НОСІЇВ</b>
                 </h1>
             </div>
             
             <div id="bactexthome1">
-                <ul class="texthome">
-                    <li>
+                
+                    <div class="animated fadeInRightBig">
                         <h2>Відновлення інформації з жорстких 
-дисків комп'ютерів та ноутбуків.</h2>
+дисків комп'ютерів та ноутбуків.</h2></div>
+<div class="texthome">
                         Не намагайтесь 
 самостійно відновити інформацію з жорсткого 
 диску. Для того, щоб запобігти втрату даних, 
 довірте Ваш вінчестер нашим спеціяалістам, досвід 
 яких є найкращою гарантією. 
-                    </li>
+                    </div>
                  
-                    <li>
+                    <div class="animated fadeInRightBig">
                         <h2>Відновлення інформації з флешки або 
-flash-носіїв та карток пам'яті.</h2>
+flash-носіїв та карток пам'яті.</h2></div>
+<div class="texthome">
                         Якщо ваша flash-ка 
 або картка пам'яті перестали показувати записану 
 на них інформацію, не засмучуйтесь, а зверніться до 
 наших спеціалістів, і ми допоможемо віновити всю 
 інформацію.
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-        <div id="knopkazam"> <a href="#dialog" class="button"><span>Зробити замовлення</span></a></div>
+            </div> 
+            
+        <div id="knopkazam"> <a href="#dialog" class="button" ><span>Зробити замовлення</span></a></div>
 <div id="boxes">
 	<div id="dialog" class="window">
 	 <h1>Вкажіть ваші контактні дані та вид послуги.</h1>
     <p id="thanks"></p>
-    <form>
+    <form id="formzam">
         <input type="checkbox" id="vid" value="Відновлення даних"/>
         <label for="vid">Відновлення даних</label>
         <br/>
@@ -105,33 +108,65 @@ flash-носіїв та карток пам'яті.</h2>
             <br>
             <br>
             <br>
+            
+            <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                Пункт Группы Свертывания #1
+              </a>
+            </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  </div>
+
+            
             <div class="headsection">
                 <h2>Наші послуги</h2>
             </div>
             <div>
                 <br>
-                <div id="listposldiv">
-                    <div class="listposl">
-                        <img src="img/imgli-1.jpg" alt="" class="imgposl"> <br> Ми з легкістю відремонтуємо Ваш комп’ютер, ноутбук чи планшет. 
+                <div id="listposldiv" class="row">
+                    <div class="listposl col-lg-3 col-md-4">
+                        <img src="img/imgli-1.jpg" alt="" class="imgposl"> 
+                        <h5> Ми з легкістю відремонтуємо Ваш комп’ютер, ноутбук чи планшет.
+                        </h5> 
                     </div>
-                    <div  class="listposl">
-                       <img src="img/imgli-2.jpg" alt="" class="imgposl">Сталась неприємність і Ви втратили всю важливу інформацію з комп’ютера чи з'ємного носія? Ми без проблем зможемо її відновити 
-за допомогою професійного обладнання, якому немає аналогів у світі. 
+                    <div  class="listposl col-lg-3 col-md-4">
+                       <img src="img/imgli-2.jpg" alt="" class="imgposl">
+                        <h5>Сталась неприємність і Ви втратили всю важливу інформацію з комп’ютера чи з'ємного носія? Ми без проблем зможемо її відновити 
+за допомогою професійного обладнання, якому немає аналогів у світі. </h5>
                     </div>
-                    <div class="listposl">
-                        <img src="img/imgli-3.jpg" alt="" class="imgposl">Ваш комп'ютер застарів і Ви хочете його змінити? Ми підберемо Вам нову техніку чи комплектуючі за помірними цінами. 
+                    <div class="listposl col-lg-3 col-md-4">
+                        <img src="img/imgli-3.jpg" alt="" class="imgposl">
+                         <h5>Ваш комп'ютер застарів і Ви хочете його змінити? Ми підберемо Вам нову техніку чи комплектуючі за помірними цінами. 
+                         </h5>
                     </div>
-                    <div class="listposl">
-                        <img src="img/imgli-4.jpg" alt="" class="imgposl">Професійний сервіс, обслуговування комп’ютерної техніки та мереж як на підприємстві так і вдома.
+                    <div class="listposl col-lg-3 col-md-4">
+                        <img src="img/imgli-4.jpg" alt="" class="imgposl">
+                         <h5>Професійний сервіс, обслуговування комп’ютерної техніки та мереж як на підприємстві так і вдома.
+                         </h5>
                     </div>
-                    <div class="listposl">
-                        <img src="img/imgli-5.jpg" alt="" class="imgposl">Також у нас Ви можете заправити картриджі та налагодити роботу принтера.
+                    <div class="listposl col-lg-3 col-md-4">
+                        <img src="img/imgli-5.jpg" alt="" class="imgposl">
+                         <h5>Також у нас Ви можете заправити картриджі та налагодити роботу принтера.
+                         </h5>
                     </div>
-                    <div class="listposl">
-                        <img src="img/imgli-6.jpg" alt="" class="imgposl">Супроводжуємо та налаштовуємо програмне забезпечення для вас.
+                    <div class="listposl col-lg-3 col-md-4">
+                        <img src="img/imgli-6.jpg" alt="" class="imgposl">
+                         <h5>Супроводжуємо та налаштовуємо програмне забезпечення для вас.
+                         </h5>
                     </div>
-                    <div class="listposl">
-                        <img src="img/imgli-7.jpg" alt="" class="imgposl">Цікавить інший вид робіт в галузі ІТ, звертайтесь до нас за телефоном чи за формою, наведеною зправа.
+                    <div class="listposl col-lg-3 col-md-4">
+                        <img src="img/imgli-7.jpg" alt="" class="imgposl">
+                         <h4>Цікавить інший вид робіт в галузі ІТ, звертайтесь до нас за телефоном чи за формою, наведеною зправа.
+                         </h4>
                     </div>
                 </div>
             </div>
@@ -169,6 +204,7 @@ flash-носіїв та карток пам'яті.</h2>
             </div>
             <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.341744214551!2d24.027107815569124!3d49.836035939325434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6f3ffffa53%3A0x97a6400db78706ec!2z0LLRg9C70LjRhtGPINCU0LbQvtGF0LDRgNCwINCU0YPQtNCw0ZTQstCwLCAxNSwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1suk!2sua!4v1472713777955" style="border:0" allowfullscreen></iframe>
         </section>
+        <footer>Зроблено Прокопів Володимир</footer>
         <script src="//code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/index.js"></script>
