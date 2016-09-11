@@ -69,6 +69,14 @@ function sendForm(e) {
     });
 
 }
-$('.carousel').carousel({
-  interval: 2000
-})
+function sendForm(e) {
+e.preventDefault();
+
+if ( (!$('#name').val()) ||
+(!$('#email').val()) ||
+(!$('#phone').val())
+) {
+alert('Заповніть форму');
+return;
+}
+}

@@ -48,7 +48,7 @@
             
             <div id="bactexthome1">
                 
-                    <div class="animated fadeInRightBig">
+                    <div class="animated slideInRight">
                         <h2>Відновлення інформації з жорстких 
 дисків комп'ютерів та ноутбуків.</h2></div>
 <div class="texthome">
@@ -59,7 +59,7 @@
 яких є найкращою гарантією. 
                     </div>
                  
-                    <div class="animated fadeInRightBig">
+                    <div class="animated slideInRight">
                         <h2>Відновлення інформації з флешки або 
 flash-носіїв та карток пам'яті.</h2></div>
 <div class="texthome">
@@ -71,7 +71,7 @@ flash-носіїв та карток пам'яті.</h2></div>
                     </div>
                 </div>
             </div>
-            </div> 
+            
             
         <div id="knopkazam"> <a href="#dialog" class="button" ><span>Зробити замовлення</span></a></div>
 <div id="boxes">
@@ -81,21 +81,21 @@ flash-носіїв та карток пам'яті.</h2></div>
     <form id="formzam">
         <input type="checkbox" id="vid" value="Відновлення даних"/>
         <label for="vid">Відновлення даних</label>
-        <br/>
+       
         <input  type="checkbox" id="rem" value="Ремонт техніки"/>
         <label for="rem">Ремонт техніки</label>
-        <br/>
-        <label placeholder="Ім'я" for="name">Ваше ім'я</label>
-        <input  class="form-control" type="text" id="name" placeholder="Ваше ім'я">
-       <br>
-       <label placeholder="Ім'я" for="phone">Ваш номер телефону</label>
-        <input  class="form-control" type="text" id="phone" placeholder="Ваш номер телефону">
-       <br>
+        
+        <label for="name">Ваше ім'я</label>
+        <input  class="form-control" type="text" id="name" placeholder="Ваше ім'я" pattern="[A-Z] [А-Я]" required>
+      
+       <label for="phone">Ваш номер телефону</label>
+        <input  class="form-control" type="text" id="phone" placeholder="Ваш номер телефону" required>
+       
        <label for="email">Ваш електронна поштова адреса</label>
        <input class="form-control" type="email" id="email" placeholder="Ваша електронна поштова скринька">
-       <br>
+       
        <label for="msg">Повідомлення</label>
-       <textarea type="text" id="msg" rows="3" placeholder="Ваші додаткові побажання"></textarea>
+       <textarea id="msg" rows="3" placeholder="Ваші додаткові побажання"></textarea>
        <br>
        <button id="btn-send">ВІДПРАВИТИ</button>
     </form>
@@ -109,28 +109,13 @@ flash-носіїв та карток пам'яті.</h2></div>
             <br>
             <br>
             
-            <div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                Пункт Группы Свертывания #1
-              </a>
-            </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  </div>
+            
 
             
             <div class="headsection">
                 <h2>Наші послуги</h2>
             </div>
-            <div>
+           
                 <br>
                 <div id="listposldiv" class="row">
                     <div class="listposl col-lg-3 col-md-4">
@@ -169,7 +154,7 @@ flash-носіїв та карток пам'яті.</h2></div>
                          </h4>
                     </div>
                 </div>
-            </div>
+            
         </section>
         <section id="pronas">
              <br>
@@ -204,7 +189,11 @@ flash-носіїв та карток пам'яті.</h2></div>
             </div>
             <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.341744214551!2d24.027107815569124!3d49.836035939325434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6f3ffffa53%3A0x97a6400db78706ec!2z0LLRg9C70LjRhtGPINCU0LbQvtGF0LDRgNCwINCU0YPQtNCw0ZTQstCwLCAxNSwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1suk!2sua!4v1472713777955" style="border:0" allowfullscreen></iframe>
         </section>
-        <footer>Зроблено Прокопів Володимир</footer>
+        <footer class="footer">
+      <div class="container">
+        <p class="text-muted">&copy; Prokopiv Volodymyr 2016</p>
+      </div>
+    </footer>
         <script src="//code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/index.js"></script>
