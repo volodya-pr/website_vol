@@ -10,9 +10,19 @@
 .navbar-default .navbar-nav>li>a {
     color: #777;
 }
-
-
-
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.h2, h2 {
+    font-size: 18px;
+}
+#logirshead {
+    display: none;
+}
+.kontaktytext {
+    color: #fff;
+}
 
 
 
@@ -41,6 +51,7 @@ padding: 0;
 }
 
 body {
+    background-color: #777;
     margin: 0 auto;
     max-width: 799px;
     min-width: 250px;
@@ -72,7 +83,7 @@ body {
 }
 
 #texth1 h1 {
-    margin-top: 50px;
+    margin-top: -20px;
     text-align: center;
     font-size: 35px;
     font-style: normal;
@@ -99,12 +110,12 @@ body {
 
 #bactexthome1 {
     box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
-    margin: 10px auto;
-    margin-top: 80px;
+    margin: 5px auto;
+    margin-top: 0;
     margin-bottom: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    max-width: 85%;
+    max-width: 98%;
     background-color: rgba(255,255,255,0.6);
 }
 
@@ -163,10 +174,12 @@ body {
     font-family: Comfortaa-Regular;
     font-size: large;
     color: #00005C;
-    text-align: left;
-    max-width: 85%;
+    text-align: center;
+    margin: auto;
+    max-width: 95%;
+    border-radius: 15px;
     min-width: 250px;
-    background-color: rgba(249, 245, 193, 0.75);
+    background-color: #ffffff;
 }
 #map {
     width: 100%;
