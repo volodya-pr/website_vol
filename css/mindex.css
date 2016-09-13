@@ -20,11 +20,6 @@
 #logirshead {
     display: none;
 }
-.kontaktytext {
-    color: #fff;
-}
-
-
 
 a {
        text-decoration: none;
@@ -167,7 +162,6 @@ body {
     font-family: Comfortaa-Bold;
 }
 #pronas {
-    background-color: #dcdcdc;
     height: 600px;
     
 }
@@ -176,7 +170,7 @@ body {
     font-size: large;
     color: #00005C;
     text-align: center;
-    margin: auto;
+    margin: 50px auto;
     max-width: 95%;
     border-radius: 15px;
     min-width: 250px;
@@ -359,7 +353,8 @@ body {
             to(rgba(230, 237, 241, 0.8)));
     }
 /*knopka end*/
-.kontaktytext {
+.kontaktytext ul {
+    margin: 20px auto;
     color: #fff;
     text-align: center;
 }
