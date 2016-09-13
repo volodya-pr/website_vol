@@ -42,7 +42,6 @@ padding: 0;
 #poslugy {
     align-content: center;
     margin: 0px 0px 0px 0px;
-    background-image: url(../img/fon_poslugy.jpg); 
    background-repeat: no-repeat;
 background-position: center;
 background-attachment: fixed;
@@ -51,11 +50,15 @@ padding: 0;
 }
 
 body {
-    background-color: #777;
     margin: 0 auto;
     max-width: 799px;
     min-width: 250px;
     align-content: center;
+    background-color: #2b3e50;
+    -ms-flex-line-pack: center;
+        align-content: center;
+        background: -webkit-radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(16, 47, 70, 0.26)), -webkit-linear-gradient(108deg, #5E8199, #153752 90%);
+
 }
 @font-face {
     font-family: Comfortaa-Bold;
@@ -93,7 +96,7 @@ body {
     text-shadow: 0px 0px 9px rgba(255,255,255,0.80);
 }
 .animated:hover {
-    background-color: #202b3a;
+    background-color: #4a5965;
     box-shadow: 5px 5px 20px rgba(0,0,0,5);
     box-shadow: inset 0 0 0 5px #afafaf;
 }
@@ -104,7 +107,7 @@ body {
     text-align: left;
     display: inline-block;
     font-size: 12pt;
-    background-color: rgb(62, 62, 62);
+    background-color: #142c3e;
     color: #e0e0e0;
 }
 
@@ -156,14 +159,12 @@ body {
 
 .headsection {
     box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
-    border-radius: 5px;
-     color: #2D0063;
-     text-align: center;
-     margin: 10px 15px 10px;
-     max-width: 90%;
-     padding: 2px;
-     font-family: Comfortaa-Bold;
-     background: linear-gradient(#fff, rgba(109, 109, 109, 0.34)); 
+    background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.49) 0%, rgba(0, 0, 0, 0.44) 1%, rgba(39, 39, 41, 0.1) 26%, rgba(37, 42, 53, 0.65) 71%, rgba(0, 0, 0, 0.8) 100%);
+    color: #ffffff;
+    text-align: center;
+    margin-left: 0px;
+    padding: 2px;
+    font-family: Comfortaa-Bold;
 }
 #pronas {
     background-color: #dcdcdc;
@@ -356,9 +357,16 @@ body {
             0, 
             from(rgba(230, 237, 241, 0)), 
             to(rgba(230, 237, 241, 0.8)));
-    
- 
+    }
+/*knopka end*/
+.kontaktytext {
+    color: #fff;
+    text-align: center;
 }
+li {
+    list-style-type: none;
+   }
+
 .footer {
     position: static;
     bottom: 0;
@@ -366,4 +374,3 @@ body {
     height: 40px;
     background-color: #f5f5f5;
 }
-/*knopka end*/
